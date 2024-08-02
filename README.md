@@ -48,10 +48,10 @@ Welcome to the University Extracurricular Activities Platform repository. This p
   cd ../frontend
   npm run dev
 
+**Note:** Check the packages listed in the package.json file in each folder to ensure that you have all the necessary dependencies installed.
 
+## Contributing
+We are not accepting pull requests at the moment. Please feel free to stay tuned for any updates.
 
-
-
-
-
-
+## License
+This project is not available for distribution. Copyright © Valeria Cardona Urrea, Juan Robles, Juan Pablo Rúa Cartagena, Juan Manuel Garzon and Luis Moreno.
