@@ -47,7 +47,7 @@ Welcome to the University Extracurricular Activities Platform repository. This p
   ```bash
   cd ../frontend
   npm run dev
-
+  ```
 **Note:** Check the packages listed in the package.json file in each folder to ensure that you have all the necessary dependencies installed.
 
 ## Contributing
