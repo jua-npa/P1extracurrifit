@@ -11,7 +11,7 @@ function App() {
     // Función para obtener datos
     const fetchData = async () => {
       try {
-        const response = await axios.get('/api/home'); // Cambia el endpoint según tu API
+        const response = await axios.get('/api/home'); 
         setData(response.data);
       } catch (err) {
         setError(err);
@@ -27,7 +27,7 @@ function App() {
       {error && <div className="alert alert-danger">Error: {error.message}</div>}
       {data ? (
         <div className="alert alert-success" role="alert">
-          Datos obtenidos: {JSON.stringify(data)}
+          modificado por juan pablo rua
         </div>
       ) : (
         <div className="alert alert-info">Cargando datos...</div>
