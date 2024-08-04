@@ -1,3 +1,5 @@
+## This branch belongs to Juan Pablo Rua Cartagena
+
 # University Extracurricular Activities Platform
 
 Welcome to the University Extracurricular Activities Platform repository. This project aims to centralize and facilitate access to information about university extracurricular activities, such as student groups, sports, and events.
