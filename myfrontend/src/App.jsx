@@ -21,17 +21,9 @@ function App() {
     fetchData();
   }, []);
 
-  return ( 
+  return (
    <div className="container mt-5">
-      <h1 className="text-center">¡Holitaaa</h1>
-      {error && <div className="alert alert-danger">Error: {error.message}</div>}
-      {data ? (
-        <div className="alert alert-success" role="alert">
-          Datos obtenidos: {JSON.stringify(data)}
-        </div>
-      ) : (
-        <div className="alert alert-info">Cargando datos...</div>
-      )}
+      <h1 className="text-center">Esta es la rama de Juan Diego Robles</h1>
     </div>
   );
 }
