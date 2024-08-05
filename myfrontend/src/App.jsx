@@ -23,7 +23,7 @@ function App() {
 
   return ( 
    <div className="container mt-5">
-      <h1 className="text-center">¡Holitaaa</h1>
+      <h1 className="text-center">Esta es la HU003</h1>
       {error && <div className="alert alert-danger">Error: {error.message}</div>}
       {data ? (
         <div className="alert alert-success" role="alert">
