@@ -1,0 +1,48 @@
+.text-container{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.grupos-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .grupos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .grupo-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px; /* Ajusta este tamaño según necesites */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grupo-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .ver-mas {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #002776;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ver-mas:hover {
+    background-color: #001d5a;
+  }
+  
