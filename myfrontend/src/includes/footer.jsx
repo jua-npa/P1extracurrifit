@@ -78,7 +78,7 @@ const Footer = () =>{
             </div>
 
             <div className="footer-bottom">
-                <img src="../assets/logo_eafit_blanco.png" alt="Universidad EAFIT" />
+                <img src="src/assets/logo_eafit_blanco.png" alt="Universidad EAFIT" />
                 <p>Universidad con Acreditación Institucional hasta 2026<br />Vigilada Mineducación</p>
             </div>
 

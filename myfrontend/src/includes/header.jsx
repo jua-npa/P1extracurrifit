@@ -14,12 +14,14 @@ const Header = () => {
       </div>
       <nav className="navbar">
         <ul>
+        <a href='/'>
         <img src="src/assets/logo_eafit_completo.png" alt="Universidad EAFIT" className="logo" />
-          <li><a href='#'>Calendario</a></li>
+        </a>
+          <li><a href='/Calendar'>Calendario</a></li>
           <li><a href="/Groups">Grupos Estudiantiles</a></li>
-          <li><a href="#">Semilleros</a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Deportes</a></li>
+          <li><a href="/Semis">Semilleros</a></li>
+          <li><a href="/Events">Eventos</a></li>
+          <li><a href="/Deports">Deportes</a></li>
         </ul>
       </nav>
     </header>

@@ -6,35 +6,35 @@ function MyCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Slide+1"
+          src="src/assets/b1.jpg"
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Slide+2"
+          src="src/assets/b2.jpg"
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Slide+3"
+          src="src/assets/b3.jpg"
           alt="Third slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Slide+4"
+          src="src/assets/b4.jpg"
           alt="Fourth slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Slide+5"
+          src="src/assets/b5.jpg"
           alt="Fifth slide"
         />
       </Carousel.Item>
