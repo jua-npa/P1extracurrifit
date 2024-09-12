@@ -29,7 +29,18 @@
     margin-right: 10px;
   }
 
-  
+  .header-top .admin-button {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Empuja el botón hacia la izquierda */
+  }
+
+  .admin-button a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+
   .search-bar {
     padding: 5px;
     border-radius: 4px;

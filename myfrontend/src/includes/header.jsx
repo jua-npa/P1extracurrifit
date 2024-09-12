@@ -4,6 +4,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-top">
+      <div className="admin-button">
+          <a href='http://localhost:8000/admin/' target="_blank">
+            <i className='admon-buttom'>Admin</i>
+          </a>
+        </div>
         <div className="social-icons">
           <a href="#"><i className="fab fa-facebook-f"></i></a>
           <a href="#"><i className="fab fa-twitter"></i></a>
