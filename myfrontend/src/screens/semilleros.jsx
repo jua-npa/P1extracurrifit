@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import direccion from '../util/axios';
 import Header from "../includes/header";
 import Footer from "../includes/footer";
 import '../styles/semilleros.css';
-
-const baseURL = 'http://localhost:8000/'
 
 function Semi() {
     const [semilleros, setSemilleros] = useState([]);
@@ -12,7 +10,8 @@ function Semi() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get(baseURL+'/semilleros/')
+        direccion
+            .get('/semilleros/')
             .then(response => {
                 console.log(response.data); // Verifica la estructura de los datos aquí
                 if (Array.isArray(response.data)) {

@@ -1,7 +1,7 @@
 // src/axios.js
 import axios from 'axios';
 
-const instance = axios.create({
+const direccion = axios.create({
   baseURL: 'http://localhost:8000/',
   timeout: 1000,
   headers: {
@@ -9,4 +9,4 @@ const instance = axios.create({
   },
 });
 
-export default instance;
+export default direccion;
