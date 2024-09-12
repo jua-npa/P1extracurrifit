@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Urls from './util/urls.js'
 import MainContainer from './includes/mainContainer.jsx';
-import StGroups from './screens/studentGroups.jsx';
+import StGroups from './screens/grupos_estudiantiles.jsx';
 import Calendar from './screens/calendario.jsx';
 import Deport from './screens/deportes.jsx';
 import Event from './screens/eventos.jsx';
