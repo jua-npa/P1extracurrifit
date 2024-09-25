@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +43,18 @@ INSTALLED_APPS = [
     'semilleros',
     'grupos_estudiantiles',
 ]
+
+# Jazzmin Settings
+JAZZMIN_SETTINGS = {
+    "welcome_sign": "Bienvenido al panel administrativo de ExtraCurriFit",
+    "site_title": "ExtraCurriFit Admin",
+    "site_header": "ExtraCurriFit",
+    "site_brand": "ExtraCurriFit",
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "darkly",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
