@@ -1,2 +1,9 @@
 
 .env
+*.pyc
+*.pyc
+/mybackend/grupos_estudiantiles/__pycache__
+mybackend/grupos_estudiantiles/__pycache__/__init__.cpython-311.pyc
+/mybackend/grupos_estudiantiles/__pycache__
+/mybackend/grupos_estudiantiles/migrations/__pycache__
+/mybackend/mybackend/__pycache__

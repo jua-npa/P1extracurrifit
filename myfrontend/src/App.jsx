@@ -9,8 +9,6 @@ import Semi from './screens/semilleros.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-
-
 function App () {
   return (
     <Router>
