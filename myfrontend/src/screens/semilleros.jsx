@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import direccion from '../util/axios';
 import Header from "../includes/header";
 import Footer from "../includes/footer";
+import Modal from '../includes/semilleroModal'; // Importa el modal
 import '../styles/semilleros.css';
 
 function Semi() {
     const [semilleros, setSemilleros] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false); // Estado para manejar el modal
+    const [selectedSemillero, setSelectedSemillero] = useState(null);
 
     useEffect(() => {
         direccion
@@ -27,6 +30,16 @@ function Semi() {
             });
     }, []);
 
+    const handleOpenModal = (semillero) => {
+        setSelectedSemillero(semillero);
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        setSelectedSemillero(null);
+    };
+
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
@@ -43,8 +56,10 @@ function Semi() {
                             <div key={semillero.id} className="semillero-card">
                                 <h5>{semillero.nombre}</h5>
                                 <h6>{semillero.escuela}</h6>
-                                <p>{semillero.descripcion}</p>
-                                <button className="ver-mas">Ver más</button>
+                                <p>{semillero.resumen}</p>
+                                <button className="ver-mas" onClick={() => handleOpenModal(semillero)}>
+                                    Ver más
+                                </button>
                             </div>
                         ))
                     ) : (
@@ -53,6 +68,8 @@ function Semi() {
                 </div>
             </div>
             <Footer />
+            {/* Modal para mostrar detalles del semillero */}
+            <Modal isOpen={isModalOpen} onClose={handleCloseModal} semillero={selectedSemillero} />
         </>
     );
 }
