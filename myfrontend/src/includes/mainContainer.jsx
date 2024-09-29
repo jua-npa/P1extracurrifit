@@ -14,7 +14,7 @@ function MainContainer() {
     // Función para obtener datos
     const fetchData = async () => {
       try {
-        const response = await axios.get('/api/home'); 
+        const response = await axios.get('/api/home');
         setData(response.data);
       } catch (err) {
         setError(err);
@@ -24,7 +24,7 @@ function MainContainer() {
     fetchData();
   }, []);
 
-  return ( 
+  return (
     <>
     <Header/>
    <div className="container mt-5">
@@ -48,7 +48,7 @@ function MainContainer() {
       ) : (
         <div className="alert alert-info">Cargando datos...</div>
       )}
-        
+
     </div>
     <div>
     <Footer/>
