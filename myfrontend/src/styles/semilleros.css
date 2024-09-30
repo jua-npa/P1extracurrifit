@@ -1,0 +1,100 @@
+/* Estilos generales */
+.text-container {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  font-size: x-large;
+}
+
+/* Estilos para el contenedor de semilleros */
+.semilleros-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.semilleros-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilos para las tarjetas de semilleros */
+.semillero-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.semillero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.semillero-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.semillero-card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.ver-mas {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #002776;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.ver-mas:hover {
+  background-color: #001d5a;
+}
+
+/* Estilos para el modal (sin cambios) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 600px;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .semilleros-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+}
