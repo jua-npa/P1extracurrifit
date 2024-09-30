@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,9 +40,21 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'extracurrifit',
-    'rest_framework',
+    'semilleros',
+    'grupos_estudiantiles',
 ]
+
+# Jazzmin Settings
+JAZZMIN_SETTINGS = {
+    "welcome_sign": "Bienvenido al panel administrativo de ExtraCurriFit",
+    "site_title": "ExtraCurriFit Admin",
+    "site_header": "ExtraCurriFit",
+    "site_brand": "ExtraCurriFit",
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "darkly",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -55,7 +69,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  
+    "http://localhost:5173",
 ]
 
 ROOT_URLCONF = 'mybackend.urls'
@@ -128,7 +142,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

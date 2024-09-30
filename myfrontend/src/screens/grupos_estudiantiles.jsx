@@ -2,23 +2,23 @@ import React, { useEffect, useState } from 'react';
 import direccion from '../util/axios';
 import Header from "../includes/header";
 import Footer from "../includes/footer";
-import Modal from '../includes/semilleroModal'; // Importa el modal
-import '../styles/semilleros.css';
+import Modal from '../includes/grupoModal';
+import '../styles/groups.css';
 
-function Semi() {
-    const [semilleros, setSemilleros] = useState([]);
+function StGroups (){
+    const [grupo, setGrupos] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false); // Estado para manejar el modal
-    const [selectedSemillero, setSelectedSemillero] = useState(null);
+    const [selectedgrupo, setSelectedgrupo] = useState(null);
 
     useEffect(() => {
         direccion
-            .get('/semilleros/')
+            .get('/grupos/')
             .then(response => {
-                console.log(response.data); // Verifica la estructura de los datos aquí
+                console.log(response.data);
                 if (Array.isArray(response.data)) {
-                    setSemilleros(response.data);
+                    setGrupos(response.data);
                 } else {
                     console.error('La respuesta de la API no es un array:', response.data);
                 }
@@ -30,14 +30,14 @@ function Semi() {
             });
     }, []);
 
-    const handleOpenModal = (semillero) => {
-        setSelectedSemillero(semillero);
+    const handleOpenModal = (grupo) => {
+        setSelectedgrupo(grupo);
         setIsModalOpen(true);
     };
 
     const handleCloseModal = () => {
         setIsModalOpen(false);
-        setSelectedSemillero(null);
+        setSelectedgrupo(null);
     };
 
     if (loading) return <p>Loading...</p>;
@@ -46,32 +46,31 @@ function Semi() {
     return (
         <>
             <Header />
-            <div className="semilleros-container">
+            <div className="grupos-container">
                 <div className="text-container">
                     <h1>Estos son los semilleros</h1>
                 </div>
-                <div className="semilleros-list">
-                    {semilleros.length > 0 ? (
-                        semilleros.map((semillero) => (
-                            <div key={semillero.id} className="semillero-card">
-                                <h5>{semillero.nombre}</h5>
-                                <h6>{semillero.escuela}</h6>
-                                <p>{semillero.resumen}</p>
-                                <button className="ver-mas" onClick={() => handleOpenModal(semillero)}>
+                <div className="grupos-list">
+                    {grupo.length > 0 ? (
+                        grupo.map((grupo) => (
+                            <div key={grupo.id} className="grupo-card">
+                                <img src={grupo.imagen} alt={grupo.nombre} className="grupo-imagen" />
+                                <h3>{grupo.nombre}</h3>
+                                <p>{grupo.descripcion}</p>
+                                <button className="ver-mas" onClick={() => handleOpenModal(grupo)}>
                                     Ver más
                                 </button>
                             </div>
                         ))
                     ) : (
-                        <p>No hay semilleros disponibles.</p>
+                        <p>No hay semilleros grupos.</p>
                     )}
                 </div>
             </div>
             <Footer />
             {/* Modal para mostrar detalles del semillero */}
-            <Modal isOpen={isModalOpen} onClose={handleCloseModal} semillero={selectedSemillero} />
+            <Modal isOpen={isModalOpen} onClose={handleCloseModal} grupo={selectedgrupo} />
         </>
     );
 }
-
-export default Semi;
+export default StGroups;

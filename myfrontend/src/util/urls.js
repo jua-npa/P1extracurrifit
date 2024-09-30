@@ -1,10 +1,10 @@
 const Urls = {
     home: "/",
-    studentGroups: "/Groups",
-    calendar: "/Calendar",
-    deports: "/Deports",
-    semill: "/Semis",
-    events: "/Events",
+    studentGroups: "/Grupos_estudiantiles",
+    calendar: "/Calendario",
+    deports: "/Deportes",
+    semill: "/Semilleros",
+    events: "/Eventos",
 }
 
 export default Urls;
