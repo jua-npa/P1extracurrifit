@@ -12,7 +12,6 @@ function Semi() {
     const [isModalOpen, setIsModalOpen] = useState(false); // Estado para manejar el modal
     const [selectedSemillero, setSelectedSemillero] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedSchool, setSelectedSchool] = useState('');
 
     useEffect(() => {
         direccion.get('/resumen/') // Asegúrate de que este endpoint esté correctamente configurado
@@ -49,13 +48,10 @@ function Semi() {
         setSelectedSemillero(null);
     };
 
-    const schools = [...new Set(semilleros.map((s) => s.escuela))]; // Obtener las escuelas únicas
-
     const filteredSemilleros = semilleros.filter((semillero) => {
         return (
             (semillero.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
-             semillero.escuela.toLowerCase().includes(searchTerm.toLowerCase())) &&
-            (selectedSchool === '' || semillero.escuela === selectedSchool) // Filtrar por escuela seleccionada
+             semillero.escuela.toLowerCase().includes(searchTerm.toLowerCase()))
         );
     });
 
