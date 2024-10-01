@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import FullCalendar from "@fullcalendar/react"; // import FullCalendar
 import dayGridPlugin from "@fullcalendar/daygrid"; // import dayGrid plugin
@@ -86,3 +87,21 @@ function Calendar() {
 }
 
 export default Calendar;
+=======
+import Header from "../includes/header";
+import Footer from "../includes/footer";
+
+function Calendar (){
+
+    return(
+        <>
+        <Header/>
+            <div>
+                <h1>Seccion Calendario</h1>
+            </div>
+        <Footer/>
+        </>
+    )
+}
+export default Calendar;
+>>>>>>> origin/juanGarzon
