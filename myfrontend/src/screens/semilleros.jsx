@@ -11,17 +11,8 @@ function Semi() {
     const [error, setError] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false); // Estado para manejar el modal
     const [selectedSemillero, setSelectedSemillero] = useState(null);
-    const [searchTerm, setSearchTerm] = useState('');
-    const [selectedSchool, setSelectedSchool] = useState('');
 
     useEffect(() => {
-        direccion.get('/resumen/') // Asegúrate de que este endpoint esté correctamente configurado
-            .then(response => {
-                console.log("Resúmenes generados", response.data);
-            })
-            .catch(error => {
-                console.error("Error generando resúmenes", error);
-            });
         direccion
             .get('/semilleros/')
             .then(response => {
@@ -49,16 +40,6 @@ function Semi() {
         setSelectedSemillero(null);
     };
 
-    const schools = [...new Set(semilleros.map((s) => s.escuela))]; // Obtener las escuelas únicas
-
-    const filteredSemilleros = semilleros.filter((semillero) => {
-        return (
-            (semillero.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
-             semillero.escuela.toLowerCase().includes(searchTerm.toLowerCase())) &&
-            (selectedSchool === '' || semillero.escuela === selectedSchool) // Filtrar por escuela seleccionada
-        );
-    });
-
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
@@ -69,19 +50,9 @@ function Semi() {
                 <div className="text-container">
                     <h1>Estos son los semilleros</h1>
                 </div>
-                    {/* Barra de búsqueda */}
-                    <div className="search-container">
-                        <input
-                            type="text"
-                            placeholder="Buscar semillero por nombre o escuela..."
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            className="search-input"
-                        />
-                    </div>
                 <div className="semilleros-list">
-                    {filteredSemilleros.length > 0 ? (
-                        filteredSemilleros.map((semillero) => (
+                    {semilleros.length > 0 ? (
+                        semilleros.map((semillero) => (
                             <div key={semillero.id} className="semillero-card">
                                 <h5>{semillero.nombre}</h5>
                                 <h6>{semillero.escuela}</h6>

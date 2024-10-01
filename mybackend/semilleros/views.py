@@ -11,30 +11,37 @@ class SemilleroListView(generics.ListAPIView):
     queryset = Semillero.objects.all()
     serializer_class = SemilleroSerializer
 
-
-@api_view(['GET'])
-def resumen_view(request):
-    print("HI")
     semilleros = Semillero.objects.all()
 
-    # Generar resúmenes si no existen
+    print(f"Número de semilleros: {semilleros.count()}")
+
+    # Generar resúmenes
     for semillero in semilleros:
         if not semillero.resumen:
             descripcion_completa = semillero.descripcion
 
             if descripcion_completa.lower() == "sin descripcion":
                 descripcion_completa = f"El semillero {semillero.nombre} de la escuela {semillero.escuela} se especializa en diversas actividades."
+                resumen = resumir_descripcion(descripcion_completa)
+                if resumen:
+                    semillero.descripcion = resumen
+                    semillero.resumen = resumen
+                    semillero.save()
+                    print("Resumen generado:", resumen)
+                else:
+                    print("No se pudo generar un resumen.")
+            else:
+                resumen = resumir_descripcion(descripcion_completa)
+                if resumen:
+                    semillero.resumen = resumen
+                    semillero.save()
+                    print("Resumen generado:", resumen)
+                else:
+                    print("No se pudo generar un resumen.")
 
-            resumen = resumir_descripcion(descripcion_completa)
-            if resumen:
-                semillero.resumen = resumen
-                semillero.save()
-
-    # Serializar los semilleros (convertir a JSON)
-    serializer = SemilleroSerializer(semilleros, many=True)
-
-    # Devolver la respuesta en formato JSON
-    return Response(serializer.data)
+    context = {
+        'semilleros': semilleros
+    }
 
 @api_view(['GET'])
 def semillero_detail(request, id):

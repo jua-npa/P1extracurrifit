@@ -98,19 +98,3 @@
     padding: 20px;
   }
 }
-
-.search-container {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-}
-
-.search-input {
-  flex: 1;
-  padding: 10px;
-  border: 2px solid transparent; /* Sin borde negro visible */
-  border-radius: 5px;
-  background-color: #f7f7f7; /* Color de fondo */
-  color: #000000;
-}

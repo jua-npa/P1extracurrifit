@@ -24,9 +24,7 @@ const Modal = ({ isOpen, onClose, semillero }) => {
                         <span className="info-value">{semillero.contacto}</span>
                     </div>
                 </div>
-                <div className="Descripcion">
-                    <p>{semillero.descripcion}</p>
-                </div>
+                <p>{semillero.descripcion}</p>
                 <button onClick={onClose}>Cerrar</button>
             </div>
         </div>
