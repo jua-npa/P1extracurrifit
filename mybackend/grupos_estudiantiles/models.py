@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.db import models
 
 class Grupo(models.Model):
@@ -7,14 +6,4 @@ class Grupo(models.Model):
     descripcion = models.TextField()
 
     def __str__(self):
-=======
-from django.db import models
-
-class Grupo(models.Model):
-    nombre = models.CharField(max_length=255)
-    imagen = models.CharField(max_length=255)
-    descripcion = models.TextField()
-
-    def __str__(self):
->>>>>>> origin/juanGarzon
         return self.nombre

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [
     {
       "nombre": "Club de Inversión y Negocios",
@@ -66,73 +65,4 @@
       "descripcion": "Descripción breve del club."
     }
   ]
-=======
-[
-    {
-      "nombre": "Club de Inversión y Negocios",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/clubin/PublishingImages/Logo-Clubin.png",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Partners Campus",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/partnerscampus/PublishingImages/Partnerts_mini.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Aiesec",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/aiesec-eafit/PublishingImages/AIESEC_MINI.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Club de Mercadeo",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/club-de-mercadeo/PublishingImages/Club_mercadeo_mini.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Grupo de Proyeccion Gerencial",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/gpg-eafit/PublishingImages/Foto%20grupo-05.png",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Organización Estudiantil",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/organizacionestudiantil/PublishingImages/Junta%202021.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Saberes de Vida",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/saberes-de-vida/PublishingImages/saberes_mini.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Producciones TVU",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/informestvu/PublishingImages/miniatura-tvu-20202-257x164.jpg?csf=1&e=cbMTed",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "SPIE Student Chapter",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/spie-eafit/PublishingImages/spie_mini.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Tutores",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/tutores-eafit/PublishingImages/tutores_mini.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "UN Society",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/unsociety/PublishingImages/un-society-280.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Grupo Seres",
-      "imagen": "https://www.eafit.edu.co/estudiantes/grupos-estudiantiles/gruposeres/PublishingImages/Seres_mini.jpg",
-      "descripcion": "Descripción breve del club."
-    },
-    {
-      "nombre": "Periodico Estudiantil Nexos",
-      "imagen": "https://www.eafit.edu.co/nexos/PublishingImages/nexos_mini.jpg",
-      "descripcion": "Descripción breve del club."
-    }
-  ]
->>>>>>> origin/juanGarzon
   
