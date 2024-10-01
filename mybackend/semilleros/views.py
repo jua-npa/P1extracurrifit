@@ -14,7 +14,6 @@ class SemilleroListView(generics.ListAPIView):
 
 @api_view(['GET'])
 def resumen_view(request):
-    print("HI")
     semilleros = Semillero.objects.all()
 
     # Generar resúmenes si no existen
