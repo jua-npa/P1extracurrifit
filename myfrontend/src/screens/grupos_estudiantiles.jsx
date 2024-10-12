@@ -11,6 +11,7 @@ function StGroups (){
     const [error, setError] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false); 
     const [selectedgrupo, setSelectedgrupo] = useState(null);
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         direccion
@@ -40,6 +41,12 @@ function StGroups (){
         setSelectedgrupo(null);
     };
 
+    const filteredgrupos = grupo.filter((grupo) => {
+        return (
+            (grupo.nombre.toLowerCase().includes(searchTerm.toLowerCase()))
+        );
+    });
+
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
@@ -50,9 +57,19 @@ function StGroups (){
                 <div className="text-container">
                     <h1>Estos son los grupos estudiantiles</h1>
                 </div>
+                    {/* Barra de búsqueda */}
+                    <div className="search-container">
+                        <input
+                            type="text"
+                            placeholder="Buscar un grupo estudiantil..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                            className="search-input"
+                        />
+                    </div>
                 <div className="grupos-list">
-                    {grupo.length > 0 ? (
-                        grupo.map((grupo) => (
+                    {filteredgrupos.length > 0 ? (
+                        filteredgrupos.map((grupo) => (
                             <div key={grupo.id} className="grupo-card">
                                 <img src={grupo.imagen} alt={grupo.nombre} className="grupo-imagen" />
                                 <h3>{grupo.nombre}</h3>
