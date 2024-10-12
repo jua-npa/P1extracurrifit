@@ -6,6 +6,7 @@ import Calendar from './screens/calendario.jsx';
 import Deport from './screens/deportes.jsx';
 import Event from './screens/eventos.jsx';
 import Semi from './screens/semilleros.jsx';
+import Resultados from './screens/results.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -19,6 +20,7 @@ function App () {
         <Route path = {Urls.deports} element ={<Deport/>}/>
         <Route path = {Urls.events} element ={<Event/>}/>
         <Route path = {Urls.semill} element ={<Semi/>}/>
+        <Route path= {Urls.results} element = {<Resultados/>}/>
       </Routes>
     </Router>
   );
