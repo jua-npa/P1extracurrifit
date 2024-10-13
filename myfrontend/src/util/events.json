@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Música para compartir y disfrutar",
+      "date": "2024-09-11T16:30:00",
+      "time": "16:30",
+      "description": "Espacio para que los estudiantes del área de música tengan la oportunidad de presentar en público a la comunidad universitaria un movimiento o una obra con duración máxima de 10 minutos.",
+      "location": "30-115"
+    },
+    {
+      "id": 2,
+      "name": "Taller de lectura",
+      "date": "2024-09-12T18:00:00",
+      "time": "18:00-20:00",
+      "description": "Taller de lectura del cuento 'No existen tal cosa como los dragones'",
+      "location": "Biblioteca Piso 2"
+    },
+    {
+      "id": 3,
+      "name": "Ópera: El niño y los sortilegios, de Maurice Ravel",
+      "date": "2024-09-13T19:30:00",
+      "time": "19:30-20:30",
+      "description": "Director invitado: Javier Castro (España).",
+      "location": "Auditorio de la Cámara de Comercio Aburrá Sur"
+    }
+  ]
+  
