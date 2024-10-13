@@ -5,6 +5,7 @@ const Urls = {
     deports: "/Deportes",
     semill: "/Semilleros",
     events: "/Eventos",
+    results: "/Resultados",
 }
 
 export default Urls;
