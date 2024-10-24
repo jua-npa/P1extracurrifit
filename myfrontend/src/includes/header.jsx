@@ -1,18 +1,6 @@
-import { useState } from 'react';
 import '../styles/header.css';
 
 const Header = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const handleSearchSubmit = (event) => {
-    event.preventDefault();
-    console.log("Buscando:", searchTerm);
-    window.location.href = `/resultados?search=${searchTerm}`;
-  };
 
   return (
     <header className="header">
@@ -27,15 +15,11 @@ const Header = () => {
           <a href="#"><i className="fab fa-twitter"></i></a>
           <a href="#"><i className="fab fa-youtube"></i></a>
           <a href="#"><i className="fab fa-instagram"></i></a>
-          <form onSubmit={handleSearchSubmit}>
-            <input 
-              type="text" 
-              placeholder="Búsqueda..." 
-              className="search-bar" 
-              value={searchTerm}
-              onChange={handleSearchChange}
-            />
-          </form>
+        </div>
+        <div>
+          <a href='https://www.eafit.edu.co/' target="_blank">
+            <i className='admon-buttom'>Pagina EAFIT</i>
+          </a>
         </div>
       </div>
       <nav className="navbar">
