@@ -22,6 +22,222 @@
       "time": "19:30-20:30",
       "description": "Director invitado: Javier Castro (España).",
       "location": "Auditorio de la Cámara de Comercio Aburrá Sur"
+    },
+    {
+      "id": 4,
+      "name": "Conferencia sobre Innovación en Ingeniería",
+      "date": "2024-10-20T09:00:00",
+      "time": "09:00-11:00",
+      "description": "Discusión sobre las últimas tendencias y avances en innovación aplicada a la ingeniería.",
+      "location": "Auditorio 12-204"
+    },
+    {
+      "id": 5,
+      "name": "Campeonato de Fútbol Interfacultades",
+      "date": "2024-10-21T15:00:00",
+      "time": "15:00-17:00",
+      "description": "Torneo de fútbol interfacultades, final del campeonato.",
+      "location": "Cancha Principal"
+    },
+    {
+      "id": 6,
+      "name": "Cine - Ghost Dog",
+      "date": "2024-10-21T17:00:00",
+      "time": "17:00-20:00",
+      "description": "Ghost dog: el camino del samurai (Jim Jarmusch, USA, 1999)",
+      "location": "Auditorio 19-501"
+    },
+    {
+      "id": 7,
+      "name": "Torneo de Ajedrez",
+      "date": "2024-10-22T10:00:00",
+      "time": "10:00-13:00",
+      "description": "Competencia de ajedrez abierta para estudiantes y profesores.",
+      "location": "Sala de Juegos 2-102"
+    },
+    {
+      "id": 8,
+      "name": "Taller de Robótica",
+      "date": "2024-10-23T08:30:00",
+      "time": "08:30-11:30",
+      "description": "Taller práctico de robótica dirigido a estudiantes de ingeniería.",
+      "location": "Laboratorio 7-203"
+    },
+    {
+      "id": 9,
+      "name": "Conferencia sobre Salud Mental",
+      "date": "2024-10-23T14:00:00",
+      "time": "14:00-16:00",
+      "description": "La importancia de la salud mental en la vida académica.",
+      "location": "Auditorio 15-101"
+    },
+    {
+      "id": 10,
+      "name": "Feria del Libro Universitaria",
+      "date": "2024-10-24T09:00:00",
+      "time": "09:00-17:00",
+      "description": "Exposición y venta de libros de editoriales universitarias.",
+      "location": "Plaza Central"
+    },
+    {
+      "id": 11,
+      "name": "Simposio Internacional de Ciencias Sociales",
+      "date": "2024-10-25T08:00:00",
+      "time": "08:00-12:00",
+      "description": "Investigadores internacionales presentan sus últimos trabajos en el campo de las ciencias sociales.",
+      "location": "Auditorio 18-303"
+    },
+    {
+      "id": 12,
+      "name": "Concurso de Innovación Tecnológica",
+      "date": "2024-10-26T10:00:00",
+      "time": "10:00-15:00",
+      "description": "Estudiantes presentan sus proyectos innovadores en tecnología.",
+      "location": "Bloque 38-105"
+    },
+    {
+      "id": 13,
+      "name": "Cine - Inception",
+      "date": "2024-10-27T16:00:00",
+      "time": "16:00-19:00",
+      "description": "Proyección de la película Inception (2010) seguida de un debate sobre los temas psicológicos abordados.",
+      "location": "Sala de Cine 20-301"
+    },
+    {
+      "id": 14,
+      "name": "Taller de Mindfulness",
+      "date": "2024-10-28T10:00:00",
+      "time": "10:00-12:00",
+      "description": "Aprende las técnicas básicas de mindfulness para mejorar la concentración y reducir el estrés.",
+      "location": "Bloque 3-202"
+    },
+    {
+      "id": 15,
+      "name": "Campeonato de Voleibol",
+      "date": "2024-10-29T14:00:00",
+      "time": "14:00-17:00",
+      "description": "Competencia de voleibol abierta para todos los estudiantes.",
+      "location": "Cancha de Voleibol"
+    },
+    {
+      "id": 16,
+      "name": "Charla sobre Blockchain y Criptomonedas",
+      "date": "2024-11-02T09:00:00",
+      "time": "09:00-11:00",
+      "description": "Explorando el impacto de blockchain y las criptomonedas en la economía global.",
+      "location": "Auditorio 10-103"
+    },
+    {
+      "id": 17,
+      "name": "Jornada de Salud Cardiovascular",
+      "date": "2024-11-04T08:00:00",
+      "time": "08:00-12:00",
+      "description": "Realiza chequeos de salud cardiovascular y participa en charlas de prevención.",
+      "location": "Centro Médico 6-104"
+    },
+    {
+      "id": 18,
+      "name": "Cine - Matrix",
+      "date": "2024-11-06T16:00:00",
+      "time": "16:00-19:00",
+      "description": "Proyección de la película Matrix (1999) seguida de una discusión filosófica.",
+      "location": "Sala de Cine 20-301"
+    },
+    {
+      "id": 19,
+      "name": "Semana de Bienestar Universitario",
+      "date": "2024-11-10T08:00:00",
+      "time": "08:00-17:00",
+      "description": "Actividades recreativas, deportivas y de bienestar para toda la comunidad universitaria.",
+      "location": "Bloque 12-101"
+    },
+    {
+      "id": 20,
+      "name": "Concierto de la Orquesta Filarmónica Universitaria",
+      "date": "2024-11-11T19:00:00",
+      "time": "19:00-21:00",
+      "description": "Concierto de la Orquesta Filarmónica Universitaria interpretando obras clásicas.",
+      "location": "Auditorio Principal"
+    },
+    {
+      "id": 21,
+      "name": "Feria de Emprendimiento",
+      "date": "2024-11-12T09:00:00",
+      "time": "09:00-17:00",
+      "description": "Estudiantes presentan sus proyectos de emprendimiento y productos innovadores.",
+      "location": "Plaza Central"
+    },
+    {
+      "id": 22,
+      "name": "Hackathon Universitaria",
+      "date": "2024-11-13T08:00:00",
+      "time": "08:00-20:00",
+      "description": "Competencia de desarrollo de software con equipos de estudiantes de ingeniería.",
+      "location": "Laboratorio de Informática 7-203"
+    },
+    {
+      "id": 23,
+      "name": "Simposio de Derecho Internacional",
+      "date": "2024-11-14T10:00:00",
+      "time": "10:00-14:00",
+      "description": "Discusión sobre los últimos casos y desarrollos en derecho internacional.",
+      "location": "Auditorio 8-301"
+    },
+    {
+      "id": 24,
+      "name": "Torneo de Ping Pong",
+      "date": "2024-11-15T14:00:00",
+      "time": "14:00-17:00",
+      "description": "Torneo de ping pong para todos los niveles.",
+      "location": "Sala de Juegos 2-101"
+    },
+    {
+      "id": 25,
+      "name": "Taller de Primeros Auxilios",
+      "date": "2024-11-16T09:00:00",
+      "time": "09:00-12:00",
+      "description": "Aprende cómo actuar en situaciones de emergencia con este taller práctico de primeros auxilios.",
+      "location": "Centro Médico 6-103"
+    },
+    {
+      "id": 26,
+      "name": "Exposición Fotográfica Estudiantil",
+      "date": "2024-11-18T10:00:00",
+      "time": "10:00-17:00",
+      "description": "Muestra de fotografías tomadas por estudiantes de la facultad de artes.",
+      "location": "Galería de Arte 15-102"
+    },
+    {
+      "id": 27,
+      "name": "Conferencia sobre Energías Renovables",
+      "date": "2024-11-19T08:30:00",
+      "time": "08:30-10:30",
+      "description": "Descubre los avances en energías renovables y su impacto en el cambio climático.",
+      "location": "Auditorio 13-201"
+    },
+    {
+      "id": 28,
+      "name": "Torneo de Baloncesto",
+      "date": "2024-11-20T15:00:00",
+      "time": "15:00-17:00",
+      "description": "Competencia de baloncesto abierta a todos los estudiantes.",
+      "location": "Gimnasio 1-102"
+    },
+    {
+      "id": 29,
+      "name": "Charla sobre Liderazgo Empresarial",
+      "date": "2024-12-01T09:00:00",
+      "time": "09:00-11:00",
+      "description": "Cómo ser un líder efectivo en el mundo empresarial moderno.",
+      "location": "Auditorio 5-301"
+    },
+    {
+      "id": 30,
+      "name": "Feria Navideña Universitaria",
+      "date": "2024-12-03T10:00:00",
+      "time": "10:00-18:00",
+      "description": "Productos navideños hechos por estudiantes y emprendedores locales.",
+      "location": "Patio Central"
     }
   ]
   

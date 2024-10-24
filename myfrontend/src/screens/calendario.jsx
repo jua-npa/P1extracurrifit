@@ -6,10 +6,8 @@ import interactionPlugin from '@fullcalendar/interaction'; // Interaction for ev
 import eventsData from '../util/events.json'; // Importing the JSON data directly
 import Header from "../includes/header";
 import Footer from "../includes/footer";
-import Modal from '../includes/modal';
-import '@fullcalendar/common/main.css'; // FullCalendar common styles
-import '@fullcalendar/daygrid/main.css'; // Month view styles
-import '@fullcalendar/timegrid/main.css'; // Week view styles
+import Modal from '../includes/calModal'; // Assuming you're using calModal for the modal
+import '../styles/calendar.css';
 
 function Calendar() {
     const [events, setEvents] = useState([]); // State to hold the event data
@@ -27,7 +25,8 @@ function Calendar() {
                 date: event.date, // FullCalendar expects the date in YYYY-MM-DD format
                 extendedProps: {
                     location: event.location,
-                    time: event.time
+                    time: event.time,
+                    description: event.description // Include the description in extendedProps
                 }
             }));
             setEvents(formattedEvents); // Set the formatted events into state
@@ -45,7 +44,8 @@ function Calendar() {
             name: info.event.title,
             date: info.event.start,
             location: info.event.extendedProps.location,
-            time: info.event.extendedProps.time
+            time: info.event.extendedProps.time,
+            description: info.event.extendedProps.description // Pass description to modal
         };
         setSelectedEvent(event);
         setIsModalOpen(true);
@@ -63,7 +63,7 @@ function Calendar() {
         <>
             <Header />
             <div className="calendar-container">
-                <h1>Event Calendar</h1>
+                <h1>Calendario de Eventos</h1>
                 {/* FullCalendar component */}
                 <FullCalendar
                     plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]} // Include both dayGrid and timeGrid plugins
